@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hi.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .one{
+            width: 100%;
+            height: 100vh;
+            background-image: url(image1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+      
+        nav a{
+            text-decoration: none;
+            font-size: 25px;
+            font-family: Arial,sans-serif;
+            color: crimson;
+            font-weight: bold;
+            padding: 30px;
+            position: relative;
+            top: 10px;
+        }
+        .box{
+            width: 1200px;
+            height: 500px;
+            /* border: 2px solid red; */
+            margin: 100px 170px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .box1{
+            width: 250px;
+            height: 300px;
+            border: 2px solid blue;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, .3);
+        }
+        @media only screen and (max-width: 400px){
+            .one{
+                width: 100%;
+                height: 100vh;
+                background-image: url(image2.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            nav a{
+            text-decoration: none;
+            font-size: 15px;
+            font-family: Arial,sans-serif;
+            color: blueviolet;
+            font-weight: bold;
+            padding: 10px;
+            position: relative;
+            top: 20px;
+            margin-left: 10px;
+          }
+         .box{
+            width: 50%;
+            height: auto;
+            /* border: 2px solid red; */
+            display: block;
+            position: relative;
+            right: 135px;
+            bottom: 40px;
+            flex-wrap: wrap;
+         }
+         .box1{
+            width: 300px;
+            height: 150px;
+            /* border: 2px solid yellow; */
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, .5);
+            margin-top: 15px;
+         }
+
+
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="one">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">aboutt</a>
+            <a href="#">contact</a>
+            <a href="#">project</a>
+        </nav>
+        <div class="box">
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+        </div>
+    </div>
+   
+</body>
+</html>
